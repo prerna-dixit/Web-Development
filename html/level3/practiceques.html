@@ -34,5 +34,137 @@
         </tr>
         </tbody>
     </table>
+    <br>
+    <form action="https://www.google.com/search?q">
+        <label for="box">
+            Google Search:
+            <input type="text" id="box" placeholder="Google Search" name="q">
+        </label>
+        <button>
+            Search
+        </button>
+    </form>
+    <br>
+    <!--registration form-->
+    <form action="/action"> 
+    <h1>Registration Form</h1>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+    <br>
+    <label for="gender">Please select your gender:</label>
+    <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+    <label for="tnc">
+        Do you agree to all terms of service?
+    </label>
+    <input type="checkbox" id="tnc" name="tnc" checked>
+    Yes, I agree.
+    <br>
+    <button type="submit">
+        Register
+    </button>
+    </form>
+
+    <!--assignment questions-->
+    <table border="black">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <br>
+    <br><br><br><br>
+    <!--form 1-->
+    <form action="/action">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="sex">Sex:</label>
+        <input type="radio" id="sex" name="sex" value="m"> Male 
+        <input type="radio" id="sex" name="sex" value="f"> Female
+        <br>
+        <label for="country">Country:</label>
+        <select name="count" id="country">
+            <option>Select an option</option>
+            <option value="ind">India</option>
+            <option value="nep">Nepal</option>
+            <option value="usa">USA</option>
+            <option value="can">Canada</option>
+        </select>
+        <br>
+        <label for="msg">Message:
+        <br>
+        <textarea name="msg" id="msg" rows="3" cols="35"></textarea>
+        </label>
+        <br>
+        <label for="sub">
+        <input type="checkbox" id="sub">Subscribe?
+        </label>
+        <br>
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <br><br><br><br>
+    <!--form 2-->
+    <form action="/action">
+    <h1>Feedback Form</h1>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Write your name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Write your email">
+    <br>
+    <label for="msg">Message:</label>
+    <br>
+    <textarea name="msg" id="msg"></textarea>
+    <br>
+    <label for="rating">Rate us out of 5:</label>
+    <br>
+    <input type="radio" id="1" name="rate">1
+    <br>
+    <input type="radio" id="2" name="rate">2
+    <br>
+    <input type="radio" id="3" name="rate">3
+    <br>
+    <input type="radio" id="4" name="rate">4
+    <br>
+    <input type="radio" id="5" name="rate">5
+    <br><br>
+    <button type="submit">Send your message!</button>
+    </form>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/action">
+        <input>
+        <br>
+        <label>
+        username:
+        <input type="text" placeholder="enter name" name="username"> <!--name attribute for name/value pair in backend-->
+        </label>
+        <br>
+        <label>
+            password:
+            <input type="password" placeholder="enter password" name="secret password">
+        </label>
+        <br>
+        <label>
+            number:
+            <input type="number">
+        </label>
+        <br>
+        <label>
+            time:
+            <input type="time">
+        </label>
+        <br>
+        <label for="color">color:</label> <!--for and id attributes-->
+        <input type="color" id="color">
+        <br>
+        <input type="checkbox" name="age" id="age" checked> <!--comes prechosen-->
+        <label for="age">I am 18+</label>
+        <br>
+        <input type="checkbox" name="age" id="age1">
+        <label for="age">I am under 18</label>
+        <br>
+        Choose a fruit:
+        <br>
+        <input type="radio" name="fruit" id="apple">
+        <label for="apple">apple</label>
+        <br>
+        <input type="radio" name="fruit" id="mango">
+        <label for="mango">mango</label>
+        <br>
+        Choose a profession:
+        <select name="profession" id="prof">
+            <option>select your profession</option>
+            <option value="stud" selected>student</option> <!--pre selected-->
+            <option value="dev">developer</option>
+        </select>
+        <br>
+        How satisfied are you with this form: <br>
+        <label for="sat">Satisfaction Level</label>
+        <input type="range" min="0" max="100" name="satisfaction" id="sat">
+        <br>
+        <label for="feed"> Provide feedback:
+        </label>
+        <textarea id="feed" name="feedback">
+        </textarea>
+        <br>
+        <button>Submit!</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--form action leading to search query in youtube-->
+    <form action="https://www.youtube.com/results?search_query">
+        <input type="text" placeholder="Search in YouTube" name="search_query">
+        <button>Search</button>
+    </form>
+</body>
+</html>
